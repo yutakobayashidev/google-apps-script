@@ -43,6 +43,7 @@ Each Apps Script project is a package under `apps/*`.
 Imported apps:
 
 - `@gas/dakoku-kanri` in `apps/dakoku-kanri` - existing `打刻管理` Apps Script web app
+- `@gas/oura-ring` in `apps/oura-ring` - existing Oura sleep-to-calendar sync script
 
 ## Import an Existing Web-Edited Script
 
@@ -104,6 +105,8 @@ For TypeScript apps, build before pushing and point clasp at generated JavaScrip
 
 - `work_logs`: one row per `勤務` calendar event, with month/date/start/end/duration/title/event_id
 - `summary`: current-month event count and total minutes/hours for later invoice generation
+
+`@gas/oura-ring` reads `OURA_TOKEN` and `CALENDAR_ID` from Apps Script Script Properties. Do not hardcode Oura tokens or calendar IDs in source.
 
 Create a version:
 

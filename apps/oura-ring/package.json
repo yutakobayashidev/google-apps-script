@@ -1,0 +1,20 @@
+{
+  "name": "@gas/oura-ring",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clasp": "clasp",
+    "build": "tsc -p tsconfig.build.json && cp appsscript.json build/appsscript.json",
+    "pull": "clasp pull",
+    "push": "pnpm run build && clasp push",
+    "status": "clasp show-file-status",
+    "open": "clasp open-script",
+    "versions": "clasp list-versions",
+    "version": "clasp create-version",
+    "deployments": "clasp list-deployments",
+    "deploy": "pnpm run build && clasp create-deployment",
+    "redeploy": "pnpm run build && clasp update-deployment",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}

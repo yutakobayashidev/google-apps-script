@@ -22,6 +22,8 @@ importers:
 
   apps/example: {}
 
+  apps/oura-ring: {}
+
 packages:
 
   '@babel/code-frame@7.29.0':
