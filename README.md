@@ -100,6 +100,11 @@ For TypeScript apps, build before pushing and point clasp at generated JavaScrip
 
 `@gas/dakoku-kanri` reads `CALENDAR_ID` from Apps Script Script Properties. Do not hardcode calendar IDs in source.
 
+`@gas/dakoku-kanri` also creates a private Spreadsheet named `打刻管理 sync` on first sync and stores its ID in Script Properties as `SPREADSHEET_ID`. Every six hours it regenerates the current month into:
+
+- `work_logs`: one row per `勤務` calendar event, with month/date/start/end/duration/title/event_id
+- `summary`: current-month event count and total minutes/hours for later invoice generation
+
 Create a version:
 
 ```bash
