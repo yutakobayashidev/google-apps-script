@@ -137,3 +137,17 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+.DS_Store
+.codex
+.pnpm-store/
+
+# clasp OAuth credentials are user-local.
+.clasprc.json
+
+# Each Apps Script project should copy apps/*/.clasp.example.json to .clasp.json.
+.clasp.json
+apps/*/.clasp.json
+
+# Apps Script build output.
+apps/*/build/

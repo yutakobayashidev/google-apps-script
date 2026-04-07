@@ -1,0 +1,13 @@
+**/**
+**/*
+*
+.*
+!appsscript.json
+!*.gs
+!*.js
+!*.ts
+!*.html
+!**/*.gs
+!**/*.js
+!**/*.ts
+!**/*.html

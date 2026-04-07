@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "None",
+    "moduleResolution": "Node10",
+    "resolveJsonModule": false,
+    "noEmit": false,
+    "outDir": "build",
+    "rootDir": "."
+  },
+  "include": ["*.ts"]
+}

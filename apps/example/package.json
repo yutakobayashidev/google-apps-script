@@ -1,0 +1,19 @@
+{
+  "name": "@gas/example",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clasp": "clasp",
+    "pull": "clasp pull",
+    "push": "clasp push",
+    "status": "clasp show-file-status",
+    "open": "clasp open-script",
+    "versions": "clasp list-versions",
+    "version": "clasp create-version",
+    "deployments": "clasp list-deployments",
+    "deploy": "clasp create-deployment",
+    "redeploy": "clasp update-deployment",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}
